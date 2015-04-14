@@ -82,26 +82,26 @@
                         <h1>Mono project</h1>
                         <p><small>http://www.go-mono.com</small></p>
                         <pre><code data-trim>
-    # apt-get install mono
+# apt-get install mono
                         </code></pre>
 
                         <pre><code data-trim>
-    public class HelloWorld {
-        public static void Main (string [] args) {
-          if (args.Length != 1) {
-            System.Console.Error.WriteLine("You must tell me your name."):
-            System.Environment.Exit(-1)
-          }
-          string name = args[0];
-          System.Console.WriteLine ("Hello, {0}!", name):
+public class HelloWorld {
+    public static void Main (string [] args) {
+        if (args.Length != 1) {
+           System.Console.Error.WriteLine("You must tell me your name."):
+           System.Environment.Exit(-1)
         }
+        string name = args[0];
+        System.Console.WriteLine ("Hello, {0}!", name):
     }
+}
                         </code></pre>
 
                         <pre><code data-trim>
-    $ mcs Hello.cs
-    $ mono Hello.exe Manrique
-    Hello, Manrique!
+$ mcs Hello.cs
+$ mono Hello.exe Manrique
+Hello, Manrique!
                         </code></pre>
                     </section>
 
