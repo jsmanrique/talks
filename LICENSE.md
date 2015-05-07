@@ -1,6 +1,10 @@
 The MIT License (MIT)
 
+<<<<<<< HEAD
 Copyright (c) 2015 J. Manrique Lopez de la Fuente
+=======
+Copyright (c) 2015 Jose Manrique Lopez de la Fuente
+>>>>>>> origin/gh-pages
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

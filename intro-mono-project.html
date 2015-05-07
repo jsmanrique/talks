@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Mono Project</title>
+
+		<meta name="description" content="Breve introducción a la historia del proyecto Mono">
+		<meta name="author" content="J. Manrique Lopez de la Fuente (@jsmanrique)">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<!--<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">-->
+        <link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+		
+		<style>
+            .alpha {
+                background: none !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+        </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#555">
+					<h1>Mono Project</h1>
+					<img src="img/Mono_project_logo.svg" alt="" class="alpha">
+					<p>
+                        Breve <em>frikintroducción</em><br/>
+					    <small>por <a href="http://jsmanrique.es">Manrique</a> / <a href="http://twitter.com/jsmanrique">@jsmanrique</a></small>
+					</p>
+				</section>
+				
+				<section>
+                    <section data-background="img/tve-el-ministerio-del-tiempo-promo.jpg">
+                        <h1>Voy a contaros una historia ...</h1>
+                    </section>
+
+                    <section data-background="img/asturlinux.jpg">
+                        <h1>Año 2001</h1>
+                    </section>
+                    
+                    <section data-background="img/withicaza.jpg">
+                        <h1>Año 2002</h1>
+                    </section>
+
+                    <section>
+                        <img src="img/miguel_de_icaza.jpg">
+                        <img src="img/mdi2.jpg">
+                        <img src="img/20060821103610656_1_original.jpg">
+                    </section>
+
+                    <section>
+                        <h1>Miguel de Icaza</h1>
+                        <img src="img/mdi1.jpg">
+                    </section>
+
+                    <section>
+                        <h1>Mono project</h1>
+                        <p><small>http://www.go-mono.com</small></p>
+                        <pre><code data-trim>
+# apt-get install mono
+                        </code></pre>
+
+                        <pre><code data-trim>
+public class HelloWorld {
+    public static void Main (string [] args) {
+        if (args.Length != 1) {
+           System.Console.Error.WriteLine("You must tell me your name."):
+           System.Environment.Exit(-1)
+        }
+        string name = args[0];
+        System.Console.WriteLine ("Hello, {0}!", name):
+    }
+}
+                        </code></pre>
+
+                        <pre><code data-trim>
+$ mcs Hello.cs
+
+$ mono Hello.exe Manrique
+
+Hello, Manrique!
+                        </code></pre>
+                    </section>
+
+                    <section data-background="img/monoepsig.jpg">
+                        <h1>Mono everywhere</h1>
+                    </section>
+                </section>
+				
+				<section>
+                    <section>
+                        <h1>And time goes by...</h1>
+                        <div style="float: left;">
+                            <h2>1999</h2>
+                            <img src="img/ximian.gif" alt="Ximian" width="200" class="alpha">
+                        </div>
+                        <p style="font-size: smaller; text-align: left;">Miguel de Icaza had a job interview at Microsoft in 1997 shortly before he started the GNOME project. At Microsoft he met Nat Friedman, who worked there as an intern. Afterwards they became good friends. In April 1999 Friedman came up with the idea to create a company to work on GNOME. The company was founded on 19 October 1999 as International GNOME Support, but its name was changed to Helix Code later. Because that name could not be trademarked the name was changed to Ximian on 10 January 2001.</p>
+                    </section>
+                    <section>
+                        <div style="float: left;">
+                            <h2>2003</h2>
+                            <img src="img/4184.jpg" alt="Novell" width="200" class="alpha">
+                        </div>
+                        <p style="font-size: smaller; text-align: left;">Ximian was acquired by Novell on 4 August 2003 because it wanted to improve its offerings of Linux for the enterprise</p>
+                        <br/>
+                    
+				    <div style="float: left;">
+				        <h2>2011</h2>
+				        <img src="img/Attachmate_logo.svg" alt="Attachmate" width="200" class="alpha">
+				    </div>
+                   <p style="font-size: smaller; text-align: left;">Novell was in turn acquired by The Attachmate Group on 27 April 2011. In May 2011 The Attachmate Group laid off all its US staff working on Mono, which included De Icaza</p>
+                    </section>
+				    <section>
+                        <h2>2011+</h2>
+                        <img src="img/Xamarin_logo_and_wordmark.png" alt="Xamarin" width="80%" class="alpha">
+                    </section>
+				</section>
+				
+				<section>
+				    <section>
+				        <h1>Mono, hoy en día</h1>
+				        <img src="img/mono-website.jpg" alt="www.mono-project.org">
+				        <p><small><a href="http://www.mono-project.com">http://www.mono-project.com</a></small></p>
+				    </section>
+				</section>
+				
+				<section>
+				    <p><small>... one more thing</small></p>
+				</section>
+				
+				<section data-background-iframe="dashboards/mono/">
+				</section>
+				
+				<section>
+				    <p><small>... or two!</small></p>
+				</section>
+				
+				<section data-background-iframe="dashboards/dotnet/">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
